@@ -10,7 +10,7 @@ type Props={
   params:{id:string};
 };
 export default async function chat({params}:Props) {
-  const {id} = await params;
+  const {id} = params;
   if (id.length !== 36){
     return notFound();
   }
